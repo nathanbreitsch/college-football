@@ -1,0 +1,4 @@
+data/completed_games/*
+*.pyc
+.DS_Store
+*.db

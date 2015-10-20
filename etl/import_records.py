@@ -4,19 +4,25 @@ PATH_TO_TEAM_CODES = 'data/team_codes.txt'
 
 def create_team_records():
 	file = open(PATH_TO_TEAM_CODES, 'r')
-	with db.atomic():
-		while True:
-			try:
-				name = file.readline()
-				code = file.readline()
-			except Exception:
+	teams = []
+	while True:
+		try:
+			name = file.readline()
+			code = file.readline()
+			if code == '':
 				break
-				
-			team = Team.create(
-				name = name,
-				code = code
-			)
+			teams.append({
+				'name': name,
+				'code': code
+			})
+		except Exception:
+			break
 	file.close()
+	print("got this far")	
+	with db.atomic():
+		Team.insert_many(teams)
+		
+	
 	
 	
 if __name__ == '__main__':
