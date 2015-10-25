@@ -1,0 +1,12 @@
+.adv-stats-glossary h2 {
+  display: inline; }
+.adv-stats-glossary .abbrev {
+  font-weight: 200; }
+.adv-stats-glossary p {
+  padding: 0 15px; }
+.adv-stats-glossary .oddRow {
+  background-color: #e2e2e2; }
+.adv-stats-glossary .evenRow {
+  background-color: #FFFFFF; }
+
+/*# sourceMappingURL=advancedStatsGlossary.css.map */

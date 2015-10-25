@@ -1,0 +1,129 @@
+.advanced-stats-bench table {
+  border-color: #121212;
+  border-collapse: collapse;
+  cursor: default; }
+.advanced-stats-bench md-input-container {
+  width: 100%; }
+.advanced-stats-bench th {
+  background-color: #c7013f;
+  color: #fff;
+  padding: 0 5px;
+  white-space: nowrap; }
+  .advanced-stats-bench th:focus {
+    outline: none; }
+.advanced-stats-bench td {
+  padding: 0 5px;
+  white-space: nowrap; }
+.advanced-stats-bench .menus {
+  width: 100%; }
+.advanced-stats-bench .dropDown {
+  display: flex; }
+.advanced-stats-bench .arrow {
+  position: relative;
+  right: -1px; }
+.advanced-stats-bench .arrow-hidden {
+  color: green;
+  opacity: 0; }
+.advanced-stats-bench .sticky-wrap {
+  overflow-x: auto;
+  position: relative;
+  margin-bottom: 1.5em;
+  width: 100%; }
+.advanced-stats-bench .sticky-wrap .sticky-thead,
+.advanced-stats-bench .sticky-wrap .sticky-col,
+.advanced-stats-bench .sticky-wrap .sticky-intersect {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.125s ease-in-out;
+  z-index: 50;
+  width: auto;
+  /* Prevent table from stretching to full size */ }
+.advanced-stats-bench .sticky-wrap .sticky-thead {
+  box-shadow: 0 0.25em 0.1em -0.1em rgba(0, 0, 0, 0.125);
+  z-index: 100;
+  width: 100%;
+  /* Force stretch */ }
+.advanced-stats-bench .sticky-wrap .sticky-intersect {
+  opacity: 1;
+  z-index: 150; }
+.advanced-stats-bench .sticky-wrap .sticky-intersect th {
+  background-color: #666;
+  color: #eee; }
+.advanced-stats-bench .sticky-wrap td,
+.advanced-stats-bench .sticky-wrap th {
+  box-sizing: border-box; }
+.advanced-stats-bench md-ink-bar {
+  color: #c7013f;
+  background: #c7013f; }
+
+.adv-stats-glossary h2 {
+  display: inline; }
+.adv-stats-glossary .abbrev {
+  font-weight: 200; }
+.adv-stats-glossary p {
+  padding: 0 15px; }
+.adv-stats-glossary .oddRow {
+  background-color: #e2e2e2; }
+.adv-stats-glossary .evenRow {
+  background-color: #FFFFFF; }
+
+.adv-stats-table {
+  overflow: auto; }
+  .adv-stats-table table {
+    border-color: #121212;
+    border-collapse: collapse;
+    cursor: default; }
+  .adv-stats-table th {
+    background-color: #c7013f;
+    color: #fff;
+    padding: 0 5px;
+    white-space: nowrap; }
+    .adv-stats-table th:focus {
+      outline: none; }
+  .adv-stats-table td {
+    padding: 0 5px;
+    white-space: nowrap; }
+  .adv-stats-table .menus {
+    width: 100%; }
+  .adv-stats-table .dropDown {
+    display: flex; }
+  .adv-stats-table .arrow {
+    position: relative;
+    right: -1px; }
+  .adv-stats-table .arrow-hidden {
+    color: green;
+    opacity: 0; }
+  .adv-stats-table .sticky-wrap {
+    overflow-x: auto;
+    position: relative;
+    margin-bottom: 1.5em;
+    width: 100%; }
+  .adv-stats-table .sticky-wrap .sticky-thead,
+  .adv-stats-table .sticky-wrap .sticky-col,
+  .adv-stats-table .sticky-wrap .sticky-intersect {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.125s ease-in-out;
+    z-index: 50;
+    width: auto;
+    /* Prevent table from stretching to full size */ }
+  .adv-stats-table .sticky-wrap .sticky-thead {
+    box-shadow: 0 0.25em 0.1em -0.1em rgba(0, 0, 0, 0.125);
+    z-index: 100;
+    width: 100%;
+    /* Force stretch */ }
+  .adv-stats-table .sticky-wrap .sticky-intersect {
+    opacity: 1;
+    z-index: 150; }
+  .adv-stats-table .sticky-wrap .sticky-intersect th {
+    background-color: #666;
+    color: #eee; }
+  .adv-stats-table .sticky-wrap td,
+  .adv-stats-table .sticky-wrap th {
+    box-sizing: border-box; }
+
+/*# sourceMappingURL=app.css.map */

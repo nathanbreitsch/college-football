@@ -1,0 +1,61 @@
+.advanced-stats-bench table {
+  border-color: #121212;
+  border-collapse: collapse;
+  cursor: default; }
+.advanced-stats-bench md-input-container {
+  width: 100%; }
+.advanced-stats-bench th {
+  background-color: #c7013f;
+  color: #fff;
+  padding: 0 5px;
+  white-space: nowrap; }
+  .advanced-stats-bench th:focus {
+    outline: none; }
+.advanced-stats-bench td {
+  padding: 0 5px;
+  white-space: nowrap; }
+.advanced-stats-bench .menus {
+  width: 100%; }
+.advanced-stats-bench .dropDown {
+  display: flex; }
+.advanced-stats-bench .arrow {
+  position: relative;
+  right: -1px; }
+.advanced-stats-bench .arrow-hidden {
+  color: green;
+  opacity: 0; }
+.advanced-stats-bench .sticky-wrap {
+  overflow-x: auto;
+  position: relative;
+  margin-bottom: 1.5em;
+  width: 100%; }
+.advanced-stats-bench .sticky-wrap .sticky-thead,
+.advanced-stats-bench .sticky-wrap .sticky-col,
+.advanced-stats-bench .sticky-wrap .sticky-intersect {
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.125s ease-in-out;
+  z-index: 50;
+  width: auto;
+  /* Prevent table from stretching to full size */ }
+.advanced-stats-bench .sticky-wrap .sticky-thead {
+  box-shadow: 0 0.25em 0.1em -0.1em rgba(0, 0, 0, 0.125);
+  z-index: 100;
+  width: 100%;
+  /* Force stretch */ }
+.advanced-stats-bench .sticky-wrap .sticky-intersect {
+  opacity: 1;
+  z-index: 150; }
+.advanced-stats-bench .sticky-wrap .sticky-intersect th {
+  background-color: #666;
+  color: #eee; }
+.advanced-stats-bench .sticky-wrap td,
+.advanced-stats-bench .sticky-wrap th {
+  box-sizing: border-box; }
+.advanced-stats-bench md-ink-bar {
+  color: #c7013f;
+  background: #c7013f; }
+
+/*# sourceMappingURL=advancedStatsBench.css.map */

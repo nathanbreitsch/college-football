@@ -615,7 +615,7 @@ W&M
 Winthrop 
 WIN
 Wisconsin
-WIS 
+WISC 
 Wofford
 WOF
 Wyoming 

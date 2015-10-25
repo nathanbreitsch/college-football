@@ -1,0 +1,58 @@
+.adv-stats-table {
+  overflow: auto; }
+  .adv-stats-table table {
+    border-color: #121212;
+    border-collapse: collapse;
+    cursor: default; }
+  .adv-stats-table th {
+    background-color: #c7013f;
+    color: #fff;
+    padding: 0 5px;
+    white-space: nowrap; }
+    .adv-stats-table th:focus {
+      outline: none; }
+  .adv-stats-table td {
+    padding: 0 5px;
+    white-space: nowrap; }
+  .adv-stats-table .menus {
+    width: 100%; }
+  .adv-stats-table .dropDown {
+    display: flex; }
+  .adv-stats-table .arrow {
+    position: relative;
+    right: -1px; }
+  .adv-stats-table .arrow-hidden {
+    color: green;
+    opacity: 0; }
+  .adv-stats-table .sticky-wrap {
+    overflow-x: auto;
+    position: relative;
+    margin-bottom: 1.5em;
+    width: 100%; }
+  .adv-stats-table .sticky-wrap .sticky-thead,
+  .adv-stats-table .sticky-wrap .sticky-col,
+  .adv-stats-table .sticky-wrap .sticky-intersect {
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: all 0.125s ease-in-out;
+    z-index: 50;
+    width: auto;
+    /* Prevent table from stretching to full size */ }
+  .adv-stats-table .sticky-wrap .sticky-thead {
+    box-shadow: 0 0.25em 0.1em -0.1em rgba(0, 0, 0, 0.125);
+    z-index: 100;
+    width: 100%;
+    /* Force stretch */ }
+  .adv-stats-table .sticky-wrap .sticky-intersect {
+    opacity: 1;
+    z-index: 150; }
+  .adv-stats-table .sticky-wrap .sticky-intersect th {
+    background-color: #666;
+    color: #eee; }
+  .adv-stats-table .sticky-wrap td,
+  .adv-stats-table .sticky-wrap th {
+    box-sizing: border-box; }
+
+/*# sourceMappingURL=advStatsTable.css.map */

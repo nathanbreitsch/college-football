@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AACI,sBAAG;EACC,OAAO,EAAE,MAAM;AAEnB,2BAAQ;EACJ,WAAW,EAAE,GAAG;AAEpB,qBAAE;EACE,OAAO,EAAE,MAAM;AAEnB,2BAAQ;EACJ,gBAAgB,EAAE,OAAO;AAE7B,4BAAS;EACL,gBAAgB,EAAE,OAAO",
+"sources": ["advancedStatsGlossary.scss"],
+"names": [],
+"file": "advancedStatsGlossary.css"
+}

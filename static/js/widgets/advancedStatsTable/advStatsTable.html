@@ -1,0 +1,20 @@
+<div class="adv-stats-table">
+    <table class="main-table sticky-enabled" border="1" style="width:100%">
+        <thead>
+            <tr>
+                <th ng-click="orderBy(header)" ng-repeat="header in tableDataHeaders">
+                    {{header}}
+                    <span class="arrow-hidden" ng-if="activeKey != header">&#9652;</span>
+                    <span class="arrow" ng-if="activeKey == header && sortDirection > 0">&#9662;</span>
+                    <span class="arrow" ng-if="activeKey == header && sortDirection < 0">&#9652;</span>
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr ng-repeat="row in tableData">
+                <th>{{row[tableDataHeaders[0]]}}</th>
+                <td ng-repeat="header in tableDataHeaders" ng-if="$index >= 1">{{row[header]}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

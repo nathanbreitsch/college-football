@@ -34,17 +34,20 @@ def read_rosters_xlsx(path):
 		print("the following file does not have a Roster tab: " + path)
 		return None
 	athletes = []
+	initial = True #idk what ws.rows is or how to skip first element
 	for row in ws.rows:
-		athletes.append({
-			'team_code': row[1].value,
-			'number': row[2].value,
-			'first_name': row[3].value,
-			'last_name': row[4].value,
-			'position': row[5].value,
-			'height': row[6].value,
-			'weight': row[7].value,
-			'year': row[8].value
-		})
+		if not initial and row[1].value is not None:
+			athletes.append({
+				'team_code': row[1].value,
+				'number': row[2].value,
+				'first_name': row[3].value,
+				'last_name': row[4].value,
+				'position': row[5].value,
+				'height': row[6].value,
+				'weight': row[7].value,
+				'year': row[8].value
+			})
+		initial = False
 		
 	return athletes
 	
@@ -61,14 +64,6 @@ def get_team_hash():
 	
 def get_athlete_hash():
 	return {}
-
-def make_game_data_records(game_dict, team_hash, athlete_hash):
-	print(game_dict)
-	
-def make_game_records():
-	file = open(PATH_TO_TEAM_CODES):
-	while name = file.read_line() and code = file.read_line():
-		
 	
 def write_to_json(game_dict, path):
 	file = open(path,'w')
@@ -92,9 +87,7 @@ def import_athletes_to_json():
 			game_path = game_path.replace('excel','json')
 			game_path = game_path.replace('.xlsx','.json')
 			write_to_json(athlete_dict, game_path)
-			
 
-			
 	
 if __name__ == '__main__':
 	import_athletes_to_json()

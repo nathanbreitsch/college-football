@@ -1,0 +1,49 @@
+<div class="advanced-stats-bench">
+    Advanced Stats Bench
+    <md-content class="md-padding">
+        <div >
+            <md-grid-list md-cols-gt-lg="8" md-cols-gt-md="5" md-cols-md="4" md-cols-gt-sm="3" md-cols-sm="2" md-gutter-gt-sm="0" md-gutter="0" md-row-height-gt-ls="4:1" md-row-height-lg="4:1" md-row-height-gt-md="2:1" md-row-height="3:1" md-row-height-sm="3:1">
+                <md-grid-tile class="gray" md-colspan-sm="1" md-colspan="1" md-rowspan="1" ng-repeat="filter in activeFilters track by $index">
+                    <md-input-container>
+                        <label>{{filter.filterTitle}}</label>
+                        <md-select ng-model="filter.filterValue">
+                            <md-optgroup label="{{filter.filterTitle}}">
+                                <md-option ng-repeat="option in filter.options" ng-value="option.value">{{option.title}}</md-option>
+                            </md-optgroup>
+                        </md-select>
+                    </md-input-container>
+                </md-grid-tile>
+            </md-grid-list>
+
+        </div>
+    </md-content>
+    <div class="table-container">
+        <md-content class="md-padding">
+            <md-tabs class="neonRed" md-border-bottom md-dynamic-height>
+                <md-tab  label="{{playerType.title}}" ng-repeat="playerType in playerTypes">
+                    <adv-stats-table></adv-stats-table>
+                </md-tab>
+                <md-tab label="Glossary">
+                    <div class=adv-stats-glossary>
+                        <md-card ng-class="{'oddRow': $index % 2 == 0, 'evenRow': $index % 2 != 0}" ng-repeat="term in glossary.termsList">
+                            <md-card-content>
+                                <h2>{{term.title}}</h2>:&nbsp;
+                                <h2 class="abbrev">{{term.abbrev}}</h2 class="abbrev">
+                                <p>{{term.def}}</p>
+                            </md-card-content>
+                        </md-card>
+                    </div>
+                </md-tab>
+            </md-tabs>
+        </md-content>
+    </div>
+</div>
+
+<!-- QB	Tm	Db	Att	Comp	Comp%	AY/Att	Yds	Pres	TD	Int	Dp	TA	Sk	Ht	Hur
+Marcus Mariota 8	ORE	77	72	49	68.1%	8.5	656	20	4	2	4	0	1	5	16
+Cardale Jones 12	OSU	70	55	32	58.2%	12.8	480	32	2	2	2	5	3	12	17
+Jameis Winston 5	FSU	50	45	30	66.7%	8.9	344	14	1	1	5	1	2	4	7
+Blake Sims 6	BAMA	42	35	21	60.0%	7.6	232	19	2	2	2	1	3	2	10
+Sean Maguire 10	FSU	3	3	0	0.0%	3.0	0	0	0	0	2	0	0	0	0
+Evan Spencer 6	OSU	1	1	1	100.0%	15.0	13	0	1	0	0	0	0	0	0
+Jeff Lockie 17	ORE	1	1	0	0.0%	11.0	0	1	0	0	4	0	0	1	1 -->
