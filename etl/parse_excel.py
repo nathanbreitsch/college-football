@@ -14,10 +14,10 @@ def read_game_file_xlsx(path):
 def get_ws(path):
 	wb = pyxl.load_workbook(filename = path)
 	if 'Data' in wb.get_sheet_names():
-		ws = wb.get_sheet_by_name('Data')
+		ws = wb.get_sheet_by_name('Import')
 		return ws
 	else:
-		print("the following file does not have a Data tab: " + path)
+		print("the following file does not have an Import tab: " + path)
 		return None
 
 
@@ -79,7 +79,7 @@ def extract_game_dict(ws):
 	row_index = 0
 	for row in ws.rows:
 		row_index += 1
-		if row_index > 243: #i dont know how to subset a generator :(
+		if row_index > 2: #i dont know how to subset a generator :(
 			play_number = row[0].value
 			if play_number in ["", " ", None]: #leave when play_numbers become nonsense
 				break
