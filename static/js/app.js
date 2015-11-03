@@ -22,6 +22,10 @@ angular.module("cfbFilmRoom", ["ngResource", "ngRoute", "ui.bootstrap", "ui.date
                 templateUrl: "static/views/advancedStats/advancedStatsBench/advancedStatsBench.html",
                 controller: "AdvancedStatsBenchController"
             })
+            .when("/players", {
+                templateUrl: "static/views/players/playerPage/playerPage.html",
+                controller: "PlayerPageController"
+            })
             .otherwise({
                 redirectTo: "/"
             });
